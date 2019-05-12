@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: simonsays-server-pod
+  labels:
+    name: simonsays-server-app
+spec:
+  containers:
+  - name: simonsays-server-container
+    image: arthurnguyen/simonsays-server
+    ports:
+      - name: simonsays-server-port
+        containerPort: 8080
